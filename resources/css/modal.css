@@ -1,0 +1,11 @@
+.modal-wrapper {
+  @apply overflow-hidden z-[500] overflow-y-auto fixed top-0 h-screen w-full left-0 bg-black bg-opacity-70;
+}
+
+.modal-inner-wrapper {
+  @apply flex flex-col items-center sticky top-0 z-[200] justify-center min-h-[100vh] w-full p-5
+}
+
+.modal-body {
+  @apply rounded-xl bg-white p-3 relative z-[300]; 
+}

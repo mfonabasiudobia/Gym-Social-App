@@ -1,0 +1,11 @@
+.container, container {
+    @apply px-3 mx-auto sm:w-[540px] md:w-[720px] lg:w-[992px];
+}
+
+.container-fluid, container-fluid {
+        @apply max-w-full  px-5 md:px-10;
+}
+
+wrapper, container-fluid, container {
+    @apply block;
+}

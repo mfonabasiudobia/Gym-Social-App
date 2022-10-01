@@ -1,0 +1,31 @@
+.table-responsive {
+    @apply overflow-x-auto overflow-y-hidden max-w-full;
+}
+
+.table {
+  @apply min-w-full;
+}
+
+.table tbody td {
+  @apply py-4 px-3 whitespace-nowrap  text-sm ;
+}
+
+.table thead th {
+  @apply py-4 px-3 text-sm whitespace-nowrap capitalize ; 
+}
+
+.table input[type='checkbox'] {
+  @apply accent-green-500 text-white caret-white;
+}
+
+.table tbody i {
+  @apply text-xl bg-transparent;
+}
+
+.table thead {
+  @apply border-b
+}
+
+   /* .table-striped tbody tr {
+      @apply odd:bg-white even:bg-gray-100
+    } */

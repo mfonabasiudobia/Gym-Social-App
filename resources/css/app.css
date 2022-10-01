@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,500;1,600;1,700;1,800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,500;1,600;1,700;1,800&display=swap");
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply font-['Poppins']  text-gray-900;
+}
+
+@import "container.css";
+@import "button.css";
+@import "form.css";
+@import "table.css";
+@import "modal.css";
+
+@layer components {
+
+    IconLarge {
+        @apply text-2xl;
+    }
+
+    Icon6xl {
+        @apply text-6xl;
+    }
+
+    .font-title {
+        @apply font-['Merriweather'];
+    }
+
+    .subtitle {
+        @apply text-primary font-semibold md:text-lg;
+    }
+
+    .page-wrapper, page-wrapper {
+      @apply min-h-[100vh] w-full overflow-hidden bg-light block;
+    }
+
+    .author-badge {
+        @apply bg-primary rounded-full px-1 text-xs text-white font-light;
+    }
+
+    small {
+        @apply text-xs font-light;
+    }
+
+    .error {
+      @apply text-red-500 text-sm ;
+    }
+
+    .comment-text {
+        @apply text-sm;
+    }
+
+    .content-short-desc {
+        @apply font-black text-gray-100 text-6xl md:text-9xl flex justify-center items-end;
+        writing-mode: vertical-rl;
+    }
+
+    .content-short-desc-wrapper {
+        @apply absolute h-full grid grid-cols-2 gap-5 top-0 left-0 z-0 w-full text-left;
+    }
+
+    .or {
+        @apply flex justify-center relative after:w-full after:top-3 after:z-0 after:left-0 after:border-b after:absolute;
+    }
+
+    .link {
+        @apply  text-link;
+    }
+
+    .background-image {
+        @apply bg-no-repeat bg-center bg-cover;
+    }
+
+    .bg-overlay {
+        @apply bg-opacity-80 bg-black relative hover:bg-transparent;
+    }
+
+     .modal-wrapper {
+        @apply overflow-hidden z-[100] overflow-y-auto fixed top-0 h-[100vh] w-full left-0 bg-black bg-opacity-50;
+      }
+
+      .modal-inner-wrapper {
+        @apply flex flex-col items-center sticky top-0 z-[200] justify-center min-h-[100vh] w-full p-5 ;
+      }
+
+      .modal-body {
+        @apply rounded-xl bg-white p-3 relative z-[300]; 
+      }
+
+    .dropdown-wrapper {
+      @apply absolute z-50 mt-2 top-10 bg-white rounded shadow-md overflow-hidden;
+    }
+
+      .form-control {
+        @apply w-full bg-white rounded-lg placeholder-gray-400 text-black border border-gray-400 text-sm focus:outline-0 ;
+        }
+
+        .floating-form-group {
+            @apply relative z-0 w-full;
+        }
+
+        .floating-label {
+                @apply peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6;
+        }
+
+        .floating-form-control {
+            @apply block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600;
+        }
+
+            
+        .form-control {
+            @apply w-full bg-white rounded placeholder-gray-400 text-black border border-gray-50  text-sm focus:outline-0 ;
+        }
+
+
+    .cover-area-wrapper {
+        @apply bg-cover bg-no-repeat; 
+    }
+
+    .cover-area-wrapper ul a {
+        @apply relative transition-all duration-200;
+    }
+
+    .cover-area-wrapper ul a:hover {
+        @apply after:absolute after:rounded-full after:w-[4px] after:h-[4px] after:bg-white after:-bottom-1 after:left-1/2;
+    }
+
+    .title {
+        @apply font-title text-3xl md:text-5xl font-bold leading-tight;
+    }
+
+    .lead-message {
+        @apply leading-snug md:text-lg;
+    }
+
+    .main-footer {
+        @apply bg-black text-white;
+    }
+
+    .footer-title {
+        @apply opacity-50;
+    }
+
+    .main-footer ul li > a {
+        @apply font-semibold;
+    }
+
+    .logo {
+        @apply w-[100px] h-auto;
+    }
+
+
+}
+
+
+
